@@ -1,7 +1,6 @@
 import {MONTH_NAMES} from "../const.js";
 import {createElement, formatTime} from "../utils.js";
 
-
 const createTaskTemplate = (task) => {
   // Обратите внимание, что всю работу мы производим заранее.
   // Внутри шаблонной строки мы не производим никаких вычислений,
