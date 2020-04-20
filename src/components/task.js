@@ -2,7 +2,6 @@ import {MONTH_NAMES} from "../const.js";
 import {formatTime} from "../utils/common.js";
 import AbstractComponent from "./abstract-component";
 
-
 const createTaskTemplate = (task) => {
   // Обратите внимание, что всю работу мы производим заранее.
   // Внутри шаблонной строки мы не производим никаких вычислений,
