@@ -4,7 +4,7 @@ import SortComponent, {SortType} from "../components/sort.js";
 import TaskComponent from "../components/task.js";
 import TaskEditComponent from "../components/task-edit.js";
 import TasksComponent from "../components/tasks.js";
-import {render, remove, replace, RenderPosition} from "../utils/render.js";
+import {render, remove, replace} from "../utils/render.js";
 
 
 const SHOWING_TASKS_COUNT_ON_START = 8;
@@ -42,7 +42,7 @@ const renderTask = (taskListElement, task) => {
     document.removeEventListener(`keydown`, onEscKeyDown);
   });
 
-  render(taskListElement, taskComponent, RenderPosition.BEFOREEND);
+  render(taskListElement, taskComponent);
 };
 
 const renderTasks = (taskListElement, tasks) => {
